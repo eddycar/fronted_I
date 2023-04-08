@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formII</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h3>20% de descuento en todos los productos</h3>
+       <div class="titulo">
+           <img src="./img/logo.png" alt="logo">
+            <h2>Nombre de la tienda</h2>
+    </div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Registrarme</a></li>
+                <li><a href="#">Ingresar</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Añadí tu super!</h1>
+            <p>Agregá tu personaje favorito completando las opciones</p>
+            <form action="#" method="post">
+                <div class="datos-izq">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha">
+                    <textarea name="comentario" id="comentario" placeholder="Descripción"></textarea>
+                </div>
+                <div class="datos-der">
+                    <label for="especie">Especie</label>
+                    <select name="especie">
+                        <option value="desconocido">Desconocido</option>
+                        <option value="superman">Superman</option>
+                        <option value="wonder">Wonder Woman</option>
+                        <option value="batman">Batman</option>
+                        <option value="harley">Harley Quinn</option>
+                        </select>
+                    <label for="foto">Agregar foto</label>
+                    <input type="file" name="foto" accept=".jpg" multiple>
+                    <label for="poderes">poderes</label>
+                    <input type="checkbox" name="poder" value="Volar" id="poderes">
+                    <label for="poderes">Volar</label>
+                    <input type="checkbox" name="poder" value="SuperInteligencia" id="poderes"  >
+                    <label for="poderes">SuperInteligencia</label>
+                    <input type="checkbox" name="poder" value="Vista de rayos laser" id="poderes"  >
+                    <label for="poderes">Vista de rayos laser</label>
+                    <input type="checkbox" name="poder" value="Billetera gorda" id="poderes"  >
+                    <label for="poderes">Billetera gorda</label>
+                    
+                    <label for="tipo">Tipo de personaje</label>
+                    <input type="radio" name="tipo" value="Heroe"id="tipo">
+                    <label for="tipo">Héroe/Heroina</label>
+                    <input type="radio" name="tipo" value="villano"id="tipo">
+                    <label for="tipo">villano/villana</label>
+                </div>
+                <button type="submit">Añadir</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h3>Todos los derechos reservados a FRONT END 1</h3>
+    </footer>
+</body>
+</html>
